@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Weekly TO DO List</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="This site is a sample site with To-Do list. Built with HTML, CSS and jQuery.">
+    
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <link href="js/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+
+</head>
+    
+<body>
+    <div class="container">
+        <h1>Weekly To Do List</h1>
+        <div class="how-to">
+            <p>1. Hover on the day and add the Task!</p>
+            <p>2. When the task is done, grab it and throw in the bin</p>
+        </div>
+
+        <div class="monToThu, clearfix">
+            <div class="toDoList" id="mon">
+                <ul class="title">
+                    <li class="day">Monday</li>
+                    <li class="toDoInput"><input type="text" placeholder="What to do on Mon...?"></li>
+                </ul>
+                <ul class="list"></ul>
+            </div> <!-- .toDoTitle -->
+
+            <div class="toDoList" id="tue">
+                <ul class="title">
+                    <li class="day">Tuesday</li>
+                    <li class="toDoInput"><input type="text" placeholder="What to do on Tue...?"></li>
+                </ul>
+                <ul class="list"></ul>
+            </div> <!-- .toDoList -->
+
+            <div class="toDoList" id="wed">
+                <ul class="title">
+                    <li class="day">Wednesday</li>
+                    <li class="toDoInput"><input type="text" placeholder="What to do on Wed...?"></li>
+                </ul>
+                <ul class="list"></ul>
+            </div> <!-- .toDoList -->
+
+            <div class="toDoList" id="thu">
+                <ul class="title">
+                    <li class="day">Thursday</li>
+                    <li class="toDoInput"><input type="text" placeholder="What to do on Thu...?"></li>
+                </ul>
+                <ul class="list"></ul>
+            </div> <!-- .toDoList -->
+        </div>
+        
+        <div class="friToSun">
+            <div class="toDoList" id="fri">
+                <ul class="title">
+                    <li class="day">Friday</li>
+                    <li class="toDoInput"><input type="text" placeholder="What to do on Fri...?"></li>
+                </ul>
+                <ul class="list"></ul>
+            </div> <!-- .toDoList -->
+
+            <div class="toDoList" id="sat">
+                <ul class="title">
+                    <li class="day">Saturday</li>
+                    <li class="toDoInput"><input type="text" placeholder="What to do on Sat...?"></li>
+                </ul>
+                <ul class="list"></ul>
+            </div> <!-- .toDoList -->
+
+            <div class="toDoList" id="sun">
+                <ul class="title">
+                    <li class="day">Sunday</li>
+                    <li class="toDoInput"><input type="text" placeholder="What to do on Sun...?"></li>
+                </ul>
+                <ul class="list"></ul>
+            </div> <!-- .toDoList -->
+            <div class="toDoList trash" id="trash">
+                <img src="img/e0180_0.png" id="cloud"> 
+                <i id="trashIcon" class="far fa-trash-alt"><a id="done"></a></i>
+            </div>
+        </div> <!-- wedToSun-->
+        <div class="clearfix"></div>
+        
+        <div id="finished">
+            <h4 id="finishedHL" class="hide">This is what you've done this week</h4>
+            <div id="listArea" class="hide">
+                <ul></ul>
+            </div>
+            <button id="listBtn" class="showList">See what you've done this week!</button>
+        </div>
+
+    </div> <!-- .container -->
+    <footer class="clearfix">
+        <small>2020 Reika Akuzawa</small>
+    </footer>
+
+        <!-- Load the CDN first -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"
+              integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+              crossorigin="anonymous"></script>
+        
+        <!-- If CDN fails to load, serve up the local version -->
+        <script>window.jQuery || document.write('<script src="js/jquery-2.1.4.js"><\/script>');</script>
+        
+        <!-- jQuery UI -->
+        <script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+        
+        <script src="js/script.js"></script>
+    
+        <script src="https://kit.fontawesome.com/fbe614a2b2.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
